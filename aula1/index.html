@@ -1,84 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto primeiro bootstrap</title>
-     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-   
-</head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <nav class="navbar" style="background-color: #0592f7;" data-bs-theme="light">
-  <div class="container-fluid">
-     <img src="ilustracao-lu-magalu-removebg-preview.png" alt="Logo" width="200" height="100" >
-      <a class="navbar-brand text-white fs-1 fw-bold" href="#" >Magazina Luiza</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Celulares e Smartphones</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Departamentos
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">TV e videos</a></li>
-            <li><a class="dropdown-item" href="#">Eletros Doméstico</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Móveis</a></li>
-            <li><a class="dropdown-item" href="#">Informática</a></li>
-            <li><a class="dropdown-item" href="#">Moda</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Tem na Magalu</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Buscar na  Magalu" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-      </form>
-    </div>
-  </div>
-</nav>
 
-<div id="carousel" class="carousel slide" w-auto>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="imagens/TV.jpg" class="d-block w-50" alt="tv">
-       <h5>PROMOÇÃO SMARt TV</h5>
-        <p>Smart TV 43" por apenas R$:4,999</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto primeiro bootstrap</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="shortcut icon" href="imagens/Magaluicon.ico" type="image/x-icon">
+
+</head>
+
+<body class="bg-body-secondary">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <nav class="navbar" style="background-color: #0592f7;" data-bs-theme="light">
+    <div class="container-fluid">
+      <img src="ilustracao-lu-magalu-removebg-preview.png" alt="Logo" width="200" height="100">
+      <a class="navbar-brand text-white fs-1 fw-bold" href="#">Magazina Luiza</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Celulares e Smartphones</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Departamentos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">TV e videos</a></li>
+              <li><a class="dropdown-item" href="#">Eletros Doméstico</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Móveis</a></li>
+              <li><a class="dropdown-item" href="#">Informática</a></li>
+              <li><a class="dropdown-item" href="#">Moda</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Tem na Magalu</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar na  Magalu" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        </form>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="imagens/PC.jpg" class="d-block w-50" alt="PC">
+  </nav>
+  <div class="d-flex p-2">
+    <div class="container">
+      <div class="row justify-content-left">
+        <div class="col-md-12">
+          <div id="carousel" class="carousel slide" w-auto>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagens/TVv.avif" class="d-block w-45 mx-auto" alt="tv">
+                <h4 class="text-center">PROMOÇÃO SMARt TV</h4>
+                <p class="text-center">Smart TV 43" por apenas R$:4,999</p>
+                <button type="button" class="btn btn-outline-success w-20 mx-auto">Adicionar ao Carrinho</button>
+                <button type="button" class="btn btn-outline-danger w-20 mx-auto">Comprar Agora</button>
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/D_795385-MLA113356843696_072026-C.jpg" class="d-block w-45 mx-auto" alt="PC">
+                <h4 class="text-center">PROMOÇÃO PC GAME </h4>
+                <p class="text-center">Apenas R$:6,999</p>
+                <button type="button" class="btn btn-outline-success w-20">Adicionar ao Carrinho</button>
+                <button type="button" class="btn btn-outline-danger w-20">Comprar Agora</button>
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/RRetro.jpeg" class="d-block w-26 mx-auto" alt="rack">
+                <h4 class="text-center">PROMOÇÃO RACK RETRÔ</h4>
+                <p class="text-center">Apenas R$:1,999</p>
+                <button type="button" class="btn btn-outline-success w-20 mx-auto">Adicionar ao Carrinho</button>
+                <button type="button" class="btn btn-outline-danger w-20  mx-auto">Comprar Agora</button>
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/iphone-013.png" class="d-block w-2 mx-auto" alt="Iphone">
+                <h4 class="text-center">PROMOÇÃO IPHONE</h4>
+                <p class="text-center">Apenas R$:13,999</p>
+                <button type="button" class="btn btn-outline-success w-20">Adicionar ao Carrinho</button>
+                <button type="button" class="btn btn-outline-danger w-20">Comprar Agora</button>
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/bb.jpg_v=638978074297470000" class="d-block w-10 mx-auto" alt="bicicleta">
+                <h4 class="text-center">PROMOÇÃO BICICLETA</h4>
+                <p class="text-center">Apenas R$:2,999</p>
+                <button type="button" class="btn btn-outline-success w-20">Adicionar ao Carrinho</button>
+                <button type="button" class="btn btn-outline-danger w-20">Comprar Agora</button>
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/geladeira.png" class="d-block w-17 mx-auto" alt="geladeira">
+                <h4 class="text-center">PROMOÇÃO GELADEIRA</h4>
+                <p class="text-center">Apenas R$:6,209</p>
+                <button type="button" class="btn btn-outline-success w-20">Adicionar ao Carrinho</button>
+                <button type="button" class="btn btn-outline-danger w-20">Comprar Agora</button>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="imagens/movel.jpg" class="d-block w-50" alt="rack">
+  
+
+    <div class="col-md-4">
+      <div class="card h-60 shadow-sm">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3vvJeRHe3sk?si=pXukLrdOzglvIuxN"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="card-body d-flex flex-column justify-content-between">
+          <a href="#" class="btn btn-primary w-100 mt-3">Compre o seu agora mesmo!</a>
+        </div>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="imagens/iphone-17-pro-17-pro-max-hero.png" class="d-block w-50" alt="Iphone">
-    </div>
-    <div class="carousel-item">
-      <img src="imagens/bicicleta.png" class="d-block w-17" alt="bicicleta">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
-    
+
 </body>
+
 </html>
